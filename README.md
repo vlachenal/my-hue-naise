@@ -5,6 +5,7 @@ Philipps HUE control and administration web UI - My HUE network administration i
 
 ### Requirements
 MyHUEnaise project requires Node.js, PHP, PHP FPM and PHP composer.
+
 Any HTTP server (tested on Nginx).
 
 ### Initialization
