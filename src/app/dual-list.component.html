@@ -1,0 +1,12 @@
+<div *ngIf="sel">
+  <div class="dual-list">
+    <div>
+      <div class="dual-list-header">Available</div>
+      <div *ngFor="let id of availableIdx" class="dual-list-item dual-list-avail" (click)="addToSelected(id)">{{all[id]}}<span>&#x25B8;</span></div>
+    </div>
+    <div>
+      <div class="dual-list-header">Selected</div>
+      <div *ngFor="let id of sel" class="dual-list-item dual-list-sel" (click)="removeFromSelected(id)"><span>&#x25C2;</span>{{all[id]}}</div>
+    </div>
+  </div>
+</div>

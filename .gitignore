@@ -1,0 +1,9 @@
+#######################################################
+# MyHUEnaise ignores files/directories in project     #
+#######################################################
+
+# Build directories
+**/dist/
+
+# Editors backup files
+**/*~

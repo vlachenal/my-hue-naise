@@ -1,0 +1,18 @@
+<div *ngIf="schedule">
+  <div><label>Name: </label><input type="text" [(ngModel)]="schedule.name" (ngModelChange)="setName()" /></div>
+  <div><label>Description: </label><input type="text" [(ngModel)]="schedule.description" (ngModelChange)="setDescription()" /></div>
+  <!-- command component -->
+  <div><label>Command: </label>
+    <div class="command">
+      <hue-command [command]="schedule.command" [bridge]="bridge" [callback]="setCommand" ></hue-command>
+  </div></div>
+  <div><label>Local time: </label><input type="text" [(ngModel)]="schedule.localtime" (ngModelChange)="setLocaltime()" /></div>
+  <div>
+    <label>Status: </label>
+    <select [(ngModel)]="schedule.status" (ngModelChange)="setStatus()">
+      <option value="disabled">Disabled</option>
+      <option value="enabled">Enabled</option>
+    </select>
+  </div>
+  <div><label>Auto delete: </label><input type="checkbox" [(ngModel)]="schedule.autodelete" (ngModelChange)="setAutoDelete()" /></div>
+</div>

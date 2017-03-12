@@ -1,0 +1,43 @@
+<template [ngIf]="command">
+  <div class="scrollable">
+    <template [ngIf]="user"><!-- address is an internal command -->
+      <select [(ngModel)]="object">
+	<option value="lights">Light</option>
+	<option value="groups">Group</option>
+	<option value="schedules">Schedule</option>
+	<option value="scenes">Scene</option>
+      </select><select [(ngModel)]="objectId">
+	<template [ngIf]="object === 'groups'">
+	  <option *ngFor="let id of groupIds" [ngValue]="id" >{{bridge.groups[id].name}}</option>
+	</template>
+	<template [ngIf]="object === 'lights'">
+	  <option *ngFor="let id of lightIds" [ngValue]="id" >{{bridge.lights[id].name}}</option>
+	</template>
+	<template [ngIf]="object === 'scenes'">
+	  <option *ngFor="let id of sceneIds" [ngValue]="id" >{{bridge.scenes[id].name}}/<option>
+	</template>
+	<!--<template [ngIf]="object === 'sensors'">
+	    <option *ngFor="let id of sensorIds" [ngValue]="id" >{{bridge.sensors[id].name}}/<option>
+	</template>-->
+      </select><select [(ngModel)]="command.method">
+	<option value="HEAD">HEAD</option>
+	<option value="GET">GET</option>
+	<option value="POST">POST</option>
+	<option value="PUT">PUT</option>
+	<option value="DELETE">DELETE</option>
+      </select>
+    </template>
+    <template [ngIf]="!user"><!-- address is not an internal command -->
+      <input type="text" [(ngModel)]="command.address" /><select [(ngModel)]="command.method">
+	<option value="HEAD">HEAD</option>
+	<option value="GET">GET</option>
+	<option value="POST">POST</option>
+	<option value="PUT">PUT</option>
+	<option value="DELETE">DELETE</option>
+      </select>
+    </template>
+  </div>
+  <div *ngIf="object === 'lights' || object === 'groups'" >
+    <hue-light-state [state]="command.body" [component]="this"></hue-light-state>
+  </div>
+</template>

@@ -1,0 +1,9 @@
+<div *ngIf="lights">
+  <h3 (click)="toggleCollapse()">Lights<span [class.expanded]="collapsed"></span></h3>
+  <div [class.section-collapse]="collapsed">
+    <template ngFor let-idx [ngForOf]="indexes" [ngForTrackBy]="trackByFn">
+      <button class="lights" [class.selected]="idx === selIdx" (click)="onSelectLight(idx)" value="idx">{{lights[idx].name}}</button>
+    </template>
+    <hue-light [light]="lights[selIdx]" [index]="selIdx" [connection]="connection"></hue-light>
+  </div>
+</div>

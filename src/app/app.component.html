@@ -1,0 +1,17 @@
+<hue-error></hue-error>
+<h1>{{title}}</h1>
+<div>
+  <label>Bridges: </label>
+  <select [(ngModel)]="selBridge" (ngModelChange)="onSelectBridge($event)" >
+    <option value="" disabled>Choose a bridge</option>
+    <option *ngFor="let bridge of bridges" [ngValue]="bridge" >
+      {{ bridge.name || bridge.internalipaddress }}
+    </option>
+  </select>
+  <template [ngIf]="selBridge && selBridge.userid">
+    <hue-bridge [bridge]="selBridge"></hue-bridge>
+  </template>
+  <template [ngIf]="selBridge && !selBridge.userid">
+    <hue-account [bridge]="selBridge"></hue-account>
+  </template>
+</div>

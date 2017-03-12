@@ -1,0 +1,18 @@
+<div *ngIf="bridge">
+  <hue-lights [lights]="bridge.lights" [connection]="connection"></hue-lights>
+  <hue-groups [groups]="bridge.groups" [connection]="connection" [lights]="bridge.lights"></hue-groups>
+  <hue-schedules [schedules]="bridge.schedules" [connection]="connection" [bridge]="bridge" ></hue-schedules>
+  <hue-scenes [scenes]="bridge.scenes" [connection]="connection" [lights]="bridge.lights" ></hue-scenes>
+  <h3 (click)="toggleCollapse()">Informations<span [class.expanded]="collapsed"></span></h3>
+  <div [class.section-collapse]="collapsed">
+    <div><label>Name: </label>{{bridge.config.name}}</div>
+    <div><label>MAC address: </label>{{bridge.config.mac}}</div>
+    <div><label>IP address: </label>{{bridge.config.ipaddress}}</div>
+    <div><label>Netmask: </label>{{bridge.config.netmask}}</div>
+    <div><label>Gateway: </label>{{bridge.config.gateway}}</div>
+    <div><label>ZigBee channel: </label>{{bridge.config.zigbeechannel}}</div>
+    <div><label>Model: </label>{{bridge.config.modelid}}</div>
+    <div><label>Software version: </label>{{bridge.config.swversion}}</div>
+    <div><label>API version: </label>{{bridge.config.apiversion}}</div>
+  </div>
+</div>

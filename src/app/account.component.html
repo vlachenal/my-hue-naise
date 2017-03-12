@@ -1,0 +1,17 @@
+<h2>Account</h2>
+<div class="tab">
+  <button class="tab" [class.selected]="create" (click)="switchToCreate()">Create</button>
+  <button class="tab" [class.selected]="register" (click)="switchToRegister()">Register</button>
+</div>
+<div *ngIf="create">
+  <div>
+    <label>Device type: </label><input type="text" [(ngModel)]="createRequest.devicetype" />
+  </div>
+  <div class="action"><button class="action" (click)="createUser()">Create</button></div>
+</div>
+<div *ngIf="register">
+  <div>
+    <label>Identifier: </label><input type="text" [(ngModel)]="registerRequest.userid" />
+  </div>
+  <div class="action"><button class="action" (click)="registerUser()">Register</button></div>
+</div>

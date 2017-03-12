@@ -1,0 +1,17 @@
+<div *ngIf="scene">
+  <div><label>Name: </label><input type="text" [(ngModel)]="scene.name" (ngModelChange)="setName()"/></div>
+  <div>
+    <label>Lights: </label>
+    <div class="extend">
+      <dual-list [all]="allLights" [sel]="selLights" [callback]="setSelectedLights" ></dual-list>
+    </div>
+  </div>
+  <div>
+    <template ngFor let-idx [ngForOf]="selLights" [ngForTrackBy]="trackByFn">
+      <button class="lights" [class.selected]="idx === selLightIdx" (click)="onSelectLight(idx)" value="idx">{{lights[idx].name}}</button>
+    </template>
+    <template [ngIf]="scene.lightstates">
+      <hue-light-state [state]="scene.lightstates[selLightIdx]" [light]="lights[selLightIdx]" [component]="null"></hue-light-state>
+    </template>
+  </div>
+</div>

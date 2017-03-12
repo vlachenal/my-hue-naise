@@ -1,0 +1,2383 @@
+{
+	"lights": {
+		"1": {
+			"state": {
+				"on": true,
+				"bri": 144,
+				"hue": 13524,
+				"sat": 200,
+				"effect": "none",
+				"xy": [
+					0.5017,
+					0.4152
+				],
+				"ct": 443,
+				"alert": "none",
+				"colormode": "xy",
+				"reachable": true
+			},
+			"type": "Extended color light",
+			"name": "Salon",
+			"modelid": "LCT007",
+			"manufacturername": "Philips",
+			"uniqueid": "00:17:88:01:10:26:64:bc-0b",
+			"swversion": "5.38.1.14919"
+		},
+		"2": {
+			"state": {
+				"on": true,
+				"bri": 254,
+				"hue": 14957,
+				"sat": 141,
+				"effect": "none",
+				"xy": [
+					0.4576,
+					0.4099
+				],
+				"ct": 365,
+				"alert": "none",
+				"colormode": "xy",
+				"reachable": true
+			},
+			"type": "Extended color light",
+			"name": "Salle à manger",
+			"modelid": "LCT007",
+			"manufacturername": "Philips",
+			"uniqueid": "00:17:88:01:10:26:37:8d-0b",
+			"swversion": "5.38.1.14919"
+		},
+		"3": {
+			"state": {
+				"on": true,
+				"bri": 254,
+				"hue": 14910,
+				"sat": 144,
+				"effect": "none",
+				"xy": [
+					0.4596,
+					0.4105
+				],
+				"ct": 370,
+				"alert": "none",
+				"colormode": "ct",
+				"reachable": false
+			},
+			"type": "Extended color light",
+			"name": "Chambre Julien",
+			"modelid": "LCT007",
+			"manufacturername": "Philips",
+			"uniqueid": "00:17:88:01:10:26:68:63-0b",
+			"swversion": "5.38.1.14919"
+		}
+	},
+	"groups": {
+		"1": {
+			"name": "Salon",
+			"lights": [
+				"1"
+			],
+			"type": "Room",
+			"state": {
+				"all_on": true,
+				"any_on": true
+			},
+			"class": "Living room",
+			"action": {
+				"on": true,
+				"bri": 144,
+				"hue": 13524,
+				"sat": 200,
+				"effect": "none",
+				"xy": [
+					0.5017,
+					0.4152
+				],
+				"ct": 443,
+				"alert": "none",
+				"colormode": "xy"
+			}
+		},
+		"2": {
+			"name": "Salle à manger",
+			"lights": [
+				"2"
+			],
+			"type": "Room",
+			"state": {
+				"all_on": true,
+				"any_on": true
+			},
+			"class": "Dining",
+			"action": {
+				"on": true,
+				"bri": 254,
+				"hue": 14957,
+				"sat": 141,
+				"effect": "none",
+				"xy": [
+					0.4576,
+					0.4099
+				],
+				"ct": 365,
+				"alert": "none",
+				"colormode": "xy"
+			}
+		},
+		"3": {
+			"name": "Chambre Julien",
+			"lights": [
+				"3"
+			],
+			"type": "Room",
+			"state": {
+				"all_on": true,
+				"any_on": true
+			},
+			"class": "Bedroom",
+			"action": {
+				"on": true,
+				"bri": 254,
+				"hue": 14910,
+				"sat": 144,
+				"effect": "none",
+				"xy": [
+					0.4596,
+					0.4105
+				],
+				"ct": 370,
+				"alert": "none",
+				"colormode": "ct"
+			}
+		},
+		"4": {
+			"name": "Séjour",
+			"lights": [
+				"1",
+				"2"
+			],
+			"type": "LightGroup",
+			"state": {
+				"all_on": true,
+				"any_on": true
+			},
+			"recycle": false,
+			"action": {
+				"on": true,
+				"bri": 254,
+				"hue": 14957,
+				"sat": 141,
+				"effect": "none",
+				"xy": [
+					0.4576,
+					0.4099
+				],
+				"ct": 365,
+				"alert": "none",
+				"colormode": "xy"
+			}
+		}
+	},
+	"config": {
+		"name": "Ping's Bridge",
+		"zigbeechannel": 15,
+		"bridgeid": "001788FFFE28DF9B",
+		"mac": "00:17:88:28:df:9b",
+		"dhcp": true,
+		"ipaddress": "192.168.239.137",
+		"netmask": "255.255.255.0",
+		"gateway": "192.168.239.254",
+		"proxyaddress": "none",
+		"proxyport": 0,
+		"UTC": "2016-10-19T20:44:23",
+		"localtime": "2016-10-19T22:44:23",
+		"timezone": "Europe/Paris",
+		"modelid": "BSB002",
+		"swversion": "01035934",
+		"apiversion": "1.15.0",
+		"swupdate": {
+			"updatestate": 0,
+			"checkforupdate": false,
+			"devicetypes": {
+				"bridge": false,
+				"lights": [],
+				"sensors": []
+			},
+			"url": "",
+			"text": "",
+			"notify": false
+		},
+		"linkbutton": false,
+		"portalservices": false,
+		"portalconnection": "connected",
+		"portalstate": {
+			"signedon": true,
+			"incoming": false,
+			"outgoing": true,
+			"communication": "disconnected"
+		},
+		"factorynew": false,
+		"replacesbridgeid": null,
+		"backup": {
+			"status": "idle",
+			"errorcode": 0
+		},
+		"whitelist": {
+			"26f8577d4a3c65871eff5d0162873c44": {
+				"last use date": "2016-10-19T20:00:52",
+				"create date": "2016-09-13T16:23:19",
+				"name": "Hue 2#LGE LG-H815"
+			},
+			"6URxjSfENGF5HY5ddwMvVKpK0CQGsJ7YbDMFY1Pi": {
+				"last use date": "2016-10-16T15:15:51",
+				"create date": "2016-09-13T16:49:58",
+				"name": "Hue 2#Samsung SM-G930F"
+			},
+			"1GXVT8uRHle3R8HFnvduKZVMKRdvtX3T6oIl2LOo": {
+				"last use date": "2016-09-13T17:11:46",
+				"create date": "2016-09-13T16:58:11",
+				"name": "MyApplication#QuickStartApp"
+			},
+			"A83CCuZB0JSrfGTqVCW74VKPgxiFOa1bTDN-miiP": {
+				"last use date": "2016-09-26T21:00:46",
+				"create date": "2016-09-13T19:03:34",
+				"name": "Huemanic#LG-H815"
+			},
+			"aTq7-EVOKVzCtIc5QW6wN5m-Ojus9nmiT0W5cPuI": {
+				"last use date": "2016-10-19T20:44:23",
+				"create date": "2016-09-14T16:18:14",
+				"name": "test#test"
+			}
+		}
+	},
+	"schedules": {
+		"1": {
+			"name": "Réveil 1",
+			"description": "L_04_Kzsh4_start wake up",
+			"command": {
+				"address": "/api/26f8577d4a3c65871eff5d0162873c44/sensors/6/state",
+				"body": {
+					"flag": true
+				},
+				"method": "PUT"
+			},
+			"localtime": "W124/T07:10:00",
+			"time": "W124/T05:10:00",
+			"created": "2016-10-19T18:38:44",
+			"status": "disabled",
+			"recycle": false
+		},
+		"2": {
+			"name": "L_04_Kzsh4",
+			"description": "L_04_Kzsh4_trigger end scene",
+			"command": {
+				"address": "/api/26f8577d4a3c65871eff5d0162873c44/groups/0/action",
+				"body": {
+					"scene": "aY4eBzLYDJFMPWY"
+				},
+				"method": "PUT"
+			},
+			"localtime": "PT00:01:00",
+			"time": "PT00:01:00",
+			"created": "2016-09-17T09:09:45",
+			"status": "disabled",
+			"autodelete": false,
+			"starttime": "2016-10-19T05:10:00",
+			"recycle": false
+		},
+		"3": {
+			"name": "Go to sleep start",
+			"description": "Trigger go to sleep start",
+			"command": {
+				"address": "/api/26f8577d4a3c65871eff5d0162873c44/sensors/7/state",
+				"body": {
+					"flag": true
+				},
+				"method": "PUT"
+			},
+			"localtime": "W002/T11:12:00",
+			"time": "W002/T09:12:00",
+			"created": "2016-09-17T09:16:02",
+			"status": "disabled",
+			"recycle": true
+		}
+	},
+	"scenes": {
+		"D-k60Rec5FirJ6Q": {
+			"name": "Détente",
+			"lights": [
+				"1"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": true,
+			"appdata": {
+				"version": 1,
+				"data": "ESnk5_r01_d01"
+			},
+			"picture": "",
+			"lastupdated": "2016-10-19T19:46:20",
+			"version": 2
+		},
+		"MnGdyB00c-D6pnF": {
+			"name": "Lecture",
+			"lights": [
+				"1"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "XcXQi_r01_d02"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-13T16:49:56",
+			"version": 2
+		},
+		"Z96AqzAhxx3rMHW": {
+			"name": "Aurore boréale",
+			"lights": [
+				"1"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "R60Jt_r01_d17"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-13T16:49:57",
+			"version": 2
+		},
+		"zvxHQB7jbYeW07u": {
+			"name": "Coucher sur la savane",
+			"lights": [
+				"1"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "EaUzd_r01_d15"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-13T16:49:52",
+			"version": 2
+		},
+		"nRI-dwBj63z5Th2": {
+			"name": "Lumineux",
+			"lights": [
+				"1"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "dp3Eb_r01_d05"
+			},
+			"picture": "",
+			"lastupdated": "2016-10-18T17:10:00",
+			"version": 2
+		},
+		"2CqnKn7frXuHfnk": {
+			"name": "Crépuscule tropical",
+			"lights": [
+				"1"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "eEFUK_r01_d16"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-13T16:49:52",
+			"version": 2
+		},
+		"nB1MtVjBRnuEAAm": {
+			"name": "Concentration",
+			"lights": [
+				"1"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": true,
+			"appdata": {
+				"version": 1,
+				"data": "efF7d_r01_d03"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-13T16:49:56",
+			"version": 2
+		},
+		"S36sCk80qNZJRRj": {
+			"name": "Printemps Floral",
+			"lights": [
+				"1"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "AnPrf_r01_d18"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-13T16:49:56",
+			"version": 2
+		},
+		"W2hXb-pJOL8bYcI": {
+			"name": "Stimulation",
+			"lights": [
+				"1"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "7Jjxi_r01_d04"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-13T16:49:56",
+			"version": 2
+		},
+		"G-YDFqwFCpOAixt": {
+			"name": "Atténué",
+			"lights": [
+				"1"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "LDppQ_r01_d06"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-13T16:49:56",
+			"version": 2
+		},
+		"U9EpvMiVV8UHZpR": {
+			"name": "Veilleuse",
+			"lights": [
+				"1"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "XeO1u_r01_d07"
+			},
+			"picture": "",
+			"lastupdated": "2016-10-18T16:34:03",
+			"version": 2
+		},
+		"TbINsTHl9nTje01": {
+			"name": "Extinction",
+			"lights": [
+				"1"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": true,
+			"locked": true,
+			"appdata": {
+				"version": 1,
+				"data": "x0mlg_r01_d19"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-13T16:49:55",
+			"version": 2
+		},
+		"8uxTvnkTNHP3zyn": {
+			"name": "Coucher sur la savane",
+			"lights": [
+				"2"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "8Ta42_r02_d15"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-13T16:50:00",
+			"version": 2
+		},
+		"CYnP8TbwuvDe1ya": {
+			"name": "Crépuscule tropical",
+			"lights": [
+				"2"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "PwBld_r02_d16"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-13T16:50:00",
+			"version": 2
+		},
+		"a7meS5QFZcnaDyx": {
+			"name": "Aurore boréale",
+			"lights": [
+				"2"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "9oK2W_r02_d17"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-13T16:50:00",
+			"version": 2
+		},
+		"JX5I-gjR8fsWS13": {
+			"name": "Printemps Floral",
+			"lights": [
+				"2"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "vP5Jy_r02_d18"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-13T16:50:00",
+			"version": 2
+		},
+		"te5vJnxpz2ST4s7": {
+			"name": "Détente",
+			"lights": [
+				"2"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "8t1p7_r02_d01"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-13T16:50:00",
+			"version": 2
+		},
+		"IGSJXJr4gZYirPB": {
+			"name": "Lecture",
+			"lights": [
+				"2"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "luOBU_r02_d02"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-13T16:50:00",
+			"version": 2
+		},
+		"Xg1p09Hgr97uLyl": {
+			"name": "Concentration",
+			"lights": [
+				"2"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": true,
+			"appdata": {
+				"version": 1,
+				"data": "maK5i_r02_d03"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-13T16:50:00",
+			"version": 2
+		},
+		"7tm7Vjlu5jQVJ9z": {
+			"name": "Atténué",
+			"lights": [
+				"2"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "a8Hzb_r02_d06"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-13T16:50:00",
+			"version": 2
+		},
+		"hPO9u2p1miRJYsO": {
+			"name": "Lumineux",
+			"lights": [
+				"2"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": true,
+			"appdata": {
+				"version": 1,
+				"data": "PVFWf_r02_d05"
+			},
+			"picture": "",
+			"lastupdated": "2016-10-19T19:46:20",
+			"version": 2
+		},
+		"H1y14pak7OsLlXu": {
+			"name": "Stimulation",
+			"lights": [
+				"2"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "fCM5t_r02_d04"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-13T16:50:00",
+			"version": 2
+		},
+		"iBNNi5NpzdvTGXX": {
+			"name": "Veilleuse",
+			"lights": [
+				"2"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "jm8xF_r02_d07"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-13T16:50:00",
+			"version": 2
+		},
+		"aPGKBmAyLzZ0bKV": {
+			"name": "Extinction",
+			"lights": [
+				"2"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": true,
+			"locked": true,
+			"appdata": {
+				"version": 1,
+				"data": "pBCWQ_r02_d19"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-13T16:52:00",
+			"version": 2
+		},
+		"Rp021onc0oBv-x0": {
+			"name": "Coucher sur la savane",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "ixIO7_r03_d15"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-15T19:29:56",
+			"version": 2
+		},
+		"gClPJ1XDVwyW4Wm": {
+			"name": "Aurore boréale",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "TpXVc_r03_d17"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-15T19:29:56",
+			"version": 2
+		},
+		"61bq7rnJNmj9epF": {
+			"name": "Crépuscule tropical",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "80KG9_r03_d16"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-15T19:29:56",
+			"version": 2
+		},
+		"ebuSy2N6Hg0AZ5j": {
+			"name": "Détente",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "C4Vvs_r03_d01"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-15T19:29:56",
+			"version": 2
+		},
+		"Z0JuMPC7HpgRBkH": {
+			"name": "Printemps Floral",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "C0ugS_r03_d18"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-15T19:29:56",
+			"version": 2
+		},
+		"ZSeQCWO2szS4f4q": {
+			"name": "Lecture",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "prWTU_r03_d02"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-15T19:29:56",
+			"version": 2
+		},
+		"L9K6fMVsLPps4Fc": {
+			"name": "Concentration",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "XUCQP_r03_d03"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-15T19:29:56",
+			"version": 2
+		},
+		"fvUm4Lx2IRrIfVs": {
+			"name": "Stimulation",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "KgSZI_r03_d04"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-15T19:29:56",
+			"version": 2
+		},
+		"eMlwUu5fQERKEoM": {
+			"name": "Atténué",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "lJKQC_r03_d06"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-15T19:29:56",
+			"version": 2
+		},
+		"cXbxIZwO40V1ir-": {
+			"name": "Lumineux",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "MzBjC_r03_d05"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-15T19:29:56",
+			"version": 2
+		},
+		"GFuV5msTWPHDlTV": {
+			"name": "Veilleuse",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"locked": false,
+			"appdata": {
+				"version": 1,
+				"data": "p5XDy_r03_d07"
+			},
+			"picture": "",
+			"lastupdated": "2016-09-15T19:29:56",
+			"version": 2
+		},
+		"I2tazOG6WFSQWgO": {
+			"name": "Go to sleep start",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-09-17T09:10:41",
+			"version": 2
+		},
+		"JjOAL48O3fOA7-m": {
+			"name": "Go to sleep end",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-09-17T09:10:41",
+			"version": 2
+		},
+		"sM2FQjNjfM6ugpl": {
+			"name": "Go to sleep start",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-09-15T21:32:33",
+			"version": 2
+		},
+		"S9q4XHLWlLYPh7K": {
+			"name": "Go to sleep end",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-09-15T21:32:34",
+			"version": 2
+		},
+		"GcLYMplVLeMtaXv": {
+			"name": "Go to sleep start",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-09-15T21:32:52",
+			"version": 2
+		},
+		"VZnp3f6c5wi-UNe": {
+			"name": "Go to sleep end",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-09-15T21:32:52",
+			"version": 2
+		},
+		"NPZOLntGQjTHZWz": {
+			"name": "Go to sleep start",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-09-15T21:33:22",
+			"version": 2
+		},
+		"TO8nqJ9LvxD-J9b": {
+			"name": "Go to sleep end",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-09-15T21:33:22",
+			"version": 2
+		},
+		"OOSHuVmdwrtoXIg": {
+			"name": "Go to sleep start",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-09-15T21:33:36",
+			"version": 2
+		},
+		"sxdPUd3QmA2tzMV": {
+			"name": "Go to sleep end",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-09-15T21:33:36",
+			"version": 2
+		},
+		"YSKmgbV8lh0rC1m": {
+			"name": "Wake Up init",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": true,
+			"locked": true,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-09-17T09:09:44",
+			"version": 2
+		},
+		"aY4eBzLYDJFMPWY": {
+			"name": "Wake Up end",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": true,
+			"locked": true,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-09-17T09:09:44",
+			"version": 2
+		},
+		"Onn5jKQGFANbLQG": {
+			"name": "Go to sleep start",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-09-17T09:10:59",
+			"version": 2
+		},
+		"FxHjOSz7jjqjsUv": {
+			"name": "Go to sleep end",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": true,
+			"locked": false,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-09-17T09:10:59",
+			"version": 2
+		},
+		"2rRFa7l-kI-OpSa": {
+			"name": "Go to sleep start",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": true,
+			"locked": true,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-09-17T09:11:17",
+			"version": 2
+		},
+		"epYpdJMJCholy8Q": {
+			"name": "Go to sleep end",
+			"lights": [
+				"3"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": true,
+			"locked": true,
+			"appdata": {},
+			"picture": "",
+			"lastupdated": "2016-09-17T09:11:17",
+			"version": 2
+		},
+		"vvhMozy6WiYjQtu": {
+			"name": "Recover room 1",
+			"lights": [
+				"1"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": true,
+			"locked": true,
+			"appdata": {
+				"version": 1,
+				"data": "hNTSZ_r01_h01"
+			},
+			"picture": "",
+			"lastupdated": "2016-10-19T19:46:20",
+			"version": 2
+		},
+		"PKHMPcLT0krWNu6": {
+			"name": "Recover room 2",
+			"lights": [
+				"2"
+			],
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": true,
+			"locked": true,
+			"appdata": {
+				"version": 1,
+				"data": "ramUK_r02_h01"
+			},
+			"picture": "",
+			"lastupdated": "2016-10-19T19:46:20",
+			"version": 2
+		}
+	},
+	"rules": {
+		"1": {
+			"name": "Salon & SaM Off ISalon",
+			"owner": "aTq7-EVOKVzCtIc5QW6wN5m-Ojus9nmiT0W5cPuI",
+			"created": "2016-09-13T16:52:01",
+			"lasttriggered": "2016-10-19T20:39:06",
+			"timestriggered": 51,
+			"status": "enabled",
+			"recycle": false,
+			"conditions": [
+				{
+					"address": "/sensors/2/state/buttonevent",
+					"operator": "eq",
+					"value": "34"
+				},
+				{
+					"address": "/sensors/2/state/lastupdated",
+					"operator": "dx"
+				}
+			],
+			"actions": [
+				{
+					"address": "/groups/1/action",
+					"method": "PUT",
+					"body": {
+						"scene": "TbINsTHl9nTje01"
+					}
+				},
+				{
+					"address": "/groups/2/action",
+					"method": "PUT",
+					"body": {
+						"scene": "aPGKBmAyLzZ0bKV"
+					}
+				},
+				{
+					"address": "/sensors/13/state",
+					"method": "PUT",
+					"body": {
+						"status": 1
+					}
+				}
+			]
+		},
+		"2": {
+			"name": "SaM Off ISalon",
+			"owner": "aTq7-EVOKVzCtIc5QW6wN5m-Ojus9nmiT0W5cPuI",
+			"created": "2016-09-14T16:41:40",
+			"lasttriggered": "2016-09-25T17:55:28",
+			"timestriggered": 1,
+			"status": "enabled",
+			"recycle": false,
+			"conditions": [
+				{
+					"address": "/sensors/2/state/buttonevent",
+					"operator": "eq",
+					"value": "16"
+				},
+				{
+					"address": "/sensors/2/state/lastupdated",
+					"operator": "dx"
+				},
+				{
+					"address": "/lights/2/state/on",
+					"operator": "eq",
+					"value": "true"
+				}
+			],
+			"actions": [
+				{
+					"address": "/lights/2/state",
+					"method": "PUT",
+					"body": {
+						"on": false
+					}
+				}
+			]
+		},
+		"3": {
+			"name": "Salon & SaM On ISalon 1",
+			"owner": "aTq7-EVOKVzCtIc5QW6wN5m-Ojus9nmiT0W5cPuI",
+			"created": "2016-09-14T16:48:34",
+			"lasttriggered": "2016-10-19T19:44:21",
+			"timestriggered": 19,
+			"status": "enabled",
+			"recycle": false,
+			"conditions": [
+				{
+					"address": "/sensors/2/state/buttonevent",
+					"operator": "eq",
+					"value": "17"
+				},
+				{
+					"address": "/sensors/2/state/lastupdated",
+					"operator": "dx"
+				},
+				{
+					"address": "/sensors/13/state/status",
+					"operator": "eq",
+					"value": "1"
+				}
+			],
+			"actions": [
+				{
+					"address": "/groups/1/action",
+					"method": "PUT",
+					"body": {
+						"scene": "D-k60Rec5FirJ6Q"
+					}
+				},
+				{
+					"address": "/groups/2/action",
+					"method": "PUT",
+					"body": {
+						"scene": "hPO9u2p1miRJYsO"
+					}
+				},
+				{
+					"address": "/sensors/13/state",
+					"method": "PUT",
+					"body": {
+						"status": 2
+					}
+				}
+			]
+		},
+		"4": {
+			"name": "SaM On ISalon",
+			"owner": "aTq7-EVOKVzCtIc5QW6wN5m-Ojus9nmiT0W5cPuI",
+			"created": "2016-09-14T16:46:29",
+			"lasttriggered": "2016-10-15T17:03:30",
+			"timestriggered": 4,
+			"status": "enabled",
+			"recycle": false,
+			"conditions": [
+				{
+					"address": "/sensors/2/state/buttonevent",
+					"operator": "eq",
+					"value": "16"
+				},
+				{
+					"address": "/sensors/2/state/lastupdated",
+					"operator": "dx"
+				},
+				{
+					"address": "/lights/2/state/on",
+					"operator": "eq",
+					"value": "false"
+				}
+			],
+			"actions": [
+				{
+					"address": "/lights/2/state",
+					"method": "PUT",
+					"body": {
+						"on": true
+					}
+				}
+			]
+		},
+		"5": {
+			"name": "Salon & SaM Off IEscalier",
+			"owner": "aTq7-EVOKVzCtIc5QW6wN5m-Ojus9nmiT0W5cPuI",
+			"created": "2016-09-15T17:52:19",
+			"lasttriggered": "2016-10-18T22:36:56",
+			"timestriggered": 26,
+			"status": "enabled",
+			"recycle": false,
+			"conditions": [
+				{
+					"address": "/sensors/5/state/buttonevent",
+					"operator": "eq",
+					"value": "34"
+				},
+				{
+					"address": "/sensors/5/state/lastupdated",
+					"operator": "dx"
+				}
+			],
+			"actions": [
+				{
+					"address": "/lights/1/state",
+					"method": "PUT",
+					"body": {
+						"on": false
+					}
+				},
+				{
+					"address": "/lights/2/state",
+					"method": "PUT",
+					"body": {
+						"on": false
+					}
+				},
+				{
+					"address": "/sensors/13/state",
+					"method": "PUT",
+					"body": {
+						"status": 1
+					}
+				}
+			]
+		},
+		"6": {
+			"name": "SaM Off IEscalier",
+			"owner": "aTq7-EVOKVzCtIc5QW6wN5m-Ojus9nmiT0W5cPuI",
+			"created": "2016-09-15T17:53:41",
+			"lasttriggered": "2016-09-24T22:59:00",
+			"timestriggered": 1,
+			"status": "enabled",
+			"recycle": false,
+			"conditions": [
+				{
+					"address": "/sensors/5/state/buttonevent",
+					"operator": "eq",
+					"value": "16"
+				},
+				{
+					"address": "/sensors/5/state/lastupdated",
+					"operator": "dx"
+				},
+				{
+					"address": "/lights/2/state/on",
+					"operator": "eq",
+					"value": "true"
+				}
+			],
+			"actions": [
+				{
+					"address": "/lights/2/state",
+					"method": "PUT",
+					"body": {
+						"on": false
+					}
+				}
+			]
+		},
+		"7": {
+			"name": "Salon On ISalon",
+			"owner": "aTq7-EVOKVzCtIc5QW6wN5m-Ojus9nmiT0W5cPuI",
+			"created": "2016-09-14T18:21:10",
+			"lasttriggered": "2016-10-18T17:12:18",
+			"timestriggered": 7,
+			"status": "enabled",
+			"recycle": false,
+			"conditions": [
+				{
+					"address": "/sensors/2/state/buttonevent",
+					"operator": "eq",
+					"value": "18"
+				},
+				{
+					"address": "/sensors/2/state/lastupdated",
+					"operator": "dx"
+				},
+				{
+					"address": "/lights/1/state/on",
+					"operator": "eq",
+					"value": "false"
+				}
+			],
+			"actions": [
+				{
+					"address": "/lights/1/state",
+					"method": "PUT",
+					"body": {
+						"on": true
+					}
+				}
+			]
+		},
+		"8": {
+			"name": "Salon Off ISalon",
+			"owner": "aTq7-EVOKVzCtIc5QW6wN5m-Ojus9nmiT0W5cPuI",
+			"created": "2016-09-14T18:30:17",
+			"lasttriggered": "2016-10-18T18:41:48",
+			"timestriggered": 6,
+			"status": "enabled",
+			"recycle": false,
+			"conditions": [
+				{
+					"address": "/sensors/2/state/buttonevent",
+					"operator": "eq",
+					"value": "18"
+				},
+				{
+					"address": "/sensors/2/state/lastupdated",
+					"operator": "dx"
+				},
+				{
+					"address": "/lights/1/state/on",
+					"operator": "eq",
+					"value": "true"
+				}
+			],
+			"actions": [
+				{
+					"address": "/lights/1/state",
+					"method": "PUT",
+					"body": {
+						"on": false
+					}
+				}
+			]
+		},
+		"9": {
+			"name": "Salon & SaM On IEscalier 1",
+			"owner": "aTq7-EVOKVzCtIc5QW6wN5m-Ojus9nmiT0W5cPuI",
+			"created": "2016-09-15T17:54:38",
+			"lasttriggered": "2016-10-18T18:51:10",
+			"timestriggered": 2,
+			"status": "enabled",
+			"recycle": false,
+			"conditions": [
+				{
+					"address": "/sensors/5/state/buttonevent",
+					"operator": "eq",
+					"value": "17"
+				},
+				{
+					"address": "/sensors/5/state/lastupdated",
+					"operator": "dx"
+				},
+				{
+					"address": "/sensors/13/state/status",
+					"operator": "eq",
+					"value": "1"
+				}
+			],
+			"actions": [
+				{
+					"address": "/groups/1/action",
+					"method": "PUT",
+					"body": {
+						"scene": "D-k60Rec5FirJ6Q"
+					}
+				},
+				{
+					"address": "/groups/2/action",
+					"method": "PUT",
+					"body": {
+						"scene": "hPO9u2p1miRJYsO"
+					}
+				},
+				{
+					"address": "/sensors/13/state",
+					"method": "PUT",
+					"body": {
+						"status": 2
+					}
+				}
+			]
+		},
+		"10": {
+			"name": "SaM On ISalon",
+			"owner": "aTq7-EVOKVzCtIc5QW6wN5m-Ojus9nmiT0W5cPuI",
+			"created": "2016-09-15T17:55:19",
+			"lasttriggered": "2016-10-14T05:31:10",
+			"timestriggered": 2,
+			"status": "enabled",
+			"recycle": false,
+			"conditions": [
+				{
+					"address": "/sensors/5/state/buttonevent",
+					"operator": "eq",
+					"value": "16"
+				},
+				{
+					"address": "/sensors/5/state/lastupdated",
+					"operator": "dx"
+				},
+				{
+					"address": "/lights/2/state/on",
+					"operator": "eq",
+					"value": "false"
+				}
+			],
+			"actions": [
+				{
+					"address": "/lights/2/state",
+					"method": "PUT",
+					"body": {
+						"on": true
+					}
+				}
+			]
+		},
+		"11": {
+			"name": "Salon On IEscalier",
+			"owner": "aTq7-EVOKVzCtIc5QW6wN5m-Ojus9nmiT0W5cPuI",
+			"created": "2016-09-15T17:55:55",
+			"lasttriggered": "2016-10-19T05:33:25",
+			"timestriggered": 3,
+			"status": "enabled",
+			"recycle": false,
+			"conditions": [
+				{
+					"address": "/sensors/5/state/buttonevent",
+					"operator": "eq",
+					"value": "18"
+				},
+				{
+					"address": "/sensors/5/state/lastupdated",
+					"operator": "dx"
+				},
+				{
+					"address": "/lights/1/state/on",
+					"operator": "eq",
+					"value": "false"
+				}
+			],
+			"actions": [
+				{
+					"address": "/lights/1/state",
+					"method": "PUT",
+					"body": {
+						"on": true
+					}
+				}
+			]
+		},
+		"12": {
+			"name": "Salon Off IEscalier",
+			"owner": "aTq7-EVOKVzCtIc5QW6wN5m-Ojus9nmiT0W5cPuI",
+			"created": "2016-09-15T17:56:47",
+			"lasttriggered": "2016-09-24T22:58:57",
+			"timestriggered": 1,
+			"status": "enabled",
+			"recycle": false,
+			"conditions": [
+				{
+					"address": "/sensors/5/state/buttonevent",
+					"operator": "eq",
+					"value": "18"
+				},
+				{
+					"address": "/sensors/5/state/lastupdated",
+					"operator": "dx"
+				},
+				{
+					"address": "/lights/1/state/on",
+					"operator": "eq",
+					"value": "true"
+				}
+			],
+			"actions": [
+				{
+					"address": "/lights/1/state",
+					"method": "PUT",
+					"body": {
+						"on": false
+					}
+				}
+			]
+		},
+		"13": {
+			"name": "Go to sleep start",
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"created": "2016-09-17T09:11:18",
+			"lasttriggered": "none",
+			"timestriggered": 0,
+			"status": "enabled",
+			"recycle": true,
+			"conditions": [
+				{
+					"address": "/sensors/7/state/flag",
+					"operator": "eq",
+					"value": "true"
+				}
+			],
+			"actions": [
+				{
+					"address": "/groups/0/action",
+					"method": "PUT",
+					"body": {
+						"scene": "2rRFa7l-kI-OpSa"
+					}
+				}
+			]
+		},
+		"14": {
+			"name": "L_04_Kzsh4_Start",
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"created": "2016-09-17T09:09:45",
+			"lasttriggered": "2016-10-19T05:10:00",
+			"timestriggered": 18,
+			"status": "enabled",
+			"recycle": false,
+			"conditions": [
+				{
+					"address": "/sensors/6/state/flag",
+					"operator": "eq",
+					"value": "true"
+				}
+			],
+			"actions": [
+				{
+					"address": "/groups/3/action",
+					"method": "PUT",
+					"body": {
+						"scene": "YSKmgbV8lh0rC1m"
+					}
+				},
+				{
+					"address": "/schedules/2",
+					"method": "PUT",
+					"body": {
+						"status": "enabled"
+					}
+				},
+				{
+					"address": "/sensors/6/state",
+					"method": "PUT",
+					"body": {
+						"flag": false
+					}
+				}
+			]
+		},
+		"15": {
+			"name": "Go to sleep fade",
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"created": "2016-09-17T09:11:18",
+			"lasttriggered": "none",
+			"timestriggered": 0,
+			"status": "enabled",
+			"recycle": true,
+			"conditions": [
+				{
+					"address": "/sensors/7/state/flag",
+					"operator": "eq",
+					"value": "true"
+				},
+				{
+					"address": "/sensors/7/state/flag",
+					"operator": "ddx",
+					"value": "PT00:01:00"
+				}
+			],
+			"actions": [
+				{
+					"address": "/groups/0/action",
+					"method": "PUT",
+					"body": {
+						"scene": "epYpdJMJCholy8Q"
+					}
+				},
+				{
+					"address": "/sensors/7/state",
+					"method": "PUT",
+					"body": {
+						"flag": false
+					}
+				}
+			]
+		},
+		"16": {
+			"name": "MotionSensor 9.day-on",
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"created": "2016-10-18T16:34:03",
+			"lasttriggered": "none",
+			"timestriggered": 0,
+			"status": "enabled",
+			"recycle": true,
+			"conditions": [
+				{
+					"address": "/sensors/11/state/status",
+					"operator": "lt",
+					"value": "1"
+				},
+				{
+					"address": "/config/localtime",
+					"operator": "in",
+					"value": "T08:00:00/T18:00:00"
+				},
+				{
+					"address": "/sensors/10/state/dark",
+					"operator": "eq",
+					"value": "true"
+				},
+				{
+					"address": "/sensors/9/state/presence",
+					"operator": "eq",
+					"value": "true"
+				},
+				{
+					"address": "/sensors/9/state/presence",
+					"operator": "dx"
+				}
+			],
+			"actions": [
+				{
+					"address": "/sensors/11/state",
+					"method": "PUT",
+					"body": {
+						"status": 1
+					}
+				}
+			]
+		},
+		"17": {
+			"name": "MotionSensor 9.day-dark-on",
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"created": "2016-10-18T16:34:03",
+			"lasttriggered": "none",
+			"timestriggered": 0,
+			"status": "enabled",
+			"recycle": true,
+			"conditions": [
+				{
+					"address": "/sensors/11/state/status",
+					"operator": "lt",
+					"value": "1"
+				},
+				{
+					"address": "/config/localtime",
+					"operator": "in",
+					"value": "T08:00:00/T18:00:00"
+				},
+				{
+					"address": "/sensors/10/state/dark",
+					"operator": "eq",
+					"value": "true"
+				},
+				{
+					"address": "/sensors/9/state/presence",
+					"operator": "eq",
+					"value": "true"
+				},
+				{
+					"address": "/sensors/10/state/dark",
+					"operator": "dx"
+				}
+			],
+			"actions": [
+				{
+					"address": "/sensors/11/state",
+					"method": "PUT",
+					"body": {
+						"status": 1
+					}
+				}
+			]
+		},
+		"18": {
+			"name": "MotionSensor 9.night-on",
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"created": "2016-10-18T16:34:03",
+			"lasttriggered": "2016-10-19T20:41:10",
+			"timestriggered": 7,
+			"status": "enabled",
+			"recycle": true,
+			"conditions": [
+				{
+					"address": "/sensors/11/state/status",
+					"operator": "lt",
+					"value": "1"
+				},
+				{
+					"address": "/config/localtime",
+					"operator": "in",
+					"value": "T18:00:00/T08:00:00"
+				},
+				{
+					"address": "/sensors/10/state/dark",
+					"operator": "eq",
+					"value": "true"
+				},
+				{
+					"address": "/sensors/9/state/presence",
+					"operator": "eq",
+					"value": "true"
+				},
+				{
+					"address": "/sensors/9/state/presence",
+					"operator": "dx"
+				}
+			],
+			"actions": [
+				{
+					"address": "/groups/1/action",
+					"method": "PUT",
+					"body": {
+						"scene": "D-k60Rec5FirJ6Q"
+					}
+				},
+				{
+					"address": "/groups/2/action",
+					"method": "PUT",
+					"body": {
+						"scene": "hPO9u2p1miRJYsO"
+					}
+				},
+				{
+					"address": "/sensors/11/state",
+					"method": "PUT",
+					"body": {
+						"status": 1
+					}
+				}
+			]
+		},
+		"19": {
+			"name": "MotionSensor 9.night-dark-on",
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"created": "2016-10-18T16:34:03",
+			"lasttriggered": "none",
+			"timestriggered": 0,
+			"status": "enabled",
+			"recycle": true,
+			"conditions": [
+				{
+					"address": "/sensors/11/state/status",
+					"operator": "lt",
+					"value": "1"
+				},
+				{
+					"address": "/config/localtime",
+					"operator": "in",
+					"value": "T18:00:00/T08:00:00"
+				},
+				{
+					"address": "/sensors/10/state/dark",
+					"operator": "eq",
+					"value": "true"
+				},
+				{
+					"address": "/sensors/9/state/presence",
+					"operator": "eq",
+					"value": "true"
+				},
+				{
+					"address": "/sensors/10/state/dark",
+					"operator": "dx"
+				}
+			],
+			"actions": [
+				{
+					"address": "/groups/1/action",
+					"method": "PUT",
+					"body": {
+						"scene": "D-k60Rec5FirJ6Q"
+					}
+				},
+				{
+					"address": "/groups/2/action",
+					"method": "PUT",
+					"body": {
+						"scene": "hPO9u2p1miRJYsO"
+					}
+				},
+				{
+					"address": "/sensors/11/state",
+					"method": "PUT",
+					"body": {
+						"status": 1
+					}
+				}
+			]
+		},
+		"20": {
+			"name": "MotionSensor 9.dim",
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"created": "2016-10-18T16:34:03",
+			"lasttriggered": "none",
+			"timestriggered": 0,
+			"status": "enabled",
+			"recycle": true,
+			"conditions": [
+				{
+					"address": "/sensors/9/state/presence",
+					"operator": "eq",
+					"value": "false"
+				},
+				{
+					"address": "/sensors/9/state/presence",
+					"operator": "ddx",
+					"value": "PT00:59:15"
+				}
+			],
+			"actions": [
+				{
+					"address": "/scenes/vvhMozy6WiYjQtu",
+					"method": "PUT",
+					"body": {
+						"storelightstate": true
+					}
+				},
+				{
+					"address": "/scenes/PKHMPcLT0krWNu6",
+					"method": "PUT",
+					"body": {
+						"storelightstate": true
+					}
+				},
+				{
+					"address": "/groups/1/action",
+					"method": "PUT",
+					"body": {
+						"bri_inc": -128
+					}
+				},
+				{
+					"address": "/groups/2/action",
+					"method": "PUT",
+					"body": {
+						"bri_inc": -128
+					}
+				},
+				{
+					"address": "/sensors/11/state",
+					"method": "PUT",
+					"body": {
+						"status": 2
+					}
+				}
+			]
+		},
+		"21": {
+			"name": "MotionSensor 9.recover",
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"created": "2016-10-18T16:34:03",
+			"lasttriggered": "none",
+			"timestriggered": 0,
+			"status": "enabled",
+			"recycle": true,
+			"conditions": [
+				{
+					"address": "/sensors/11/state/status",
+					"operator": "gt",
+					"value": "1"
+				},
+				{
+					"address": "/sensors/9/state/presence",
+					"operator": "eq",
+					"value": "true"
+				},
+				{
+					"address": "/sensors/9/state/presence",
+					"operator": "dx"
+				}
+			],
+			"actions": [
+				{
+					"address": "/groups/1/action",
+					"method": "PUT",
+					"body": {
+						"scene": "vvhMozy6WiYjQtu"
+					}
+				},
+				{
+					"address": "/groups/2/action",
+					"method": "PUT",
+					"body": {
+						"scene": "PKHMPcLT0krWNu6"
+					}
+				},
+				{
+					"address": "/sensors/11/state",
+					"method": "PUT",
+					"body": {
+						"status": 1
+					}
+				}
+			]
+		},
+		"22": {
+			"name": "MotionSensor 9.off",
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"created": "2016-10-18T16:34:03",
+			"lasttriggered": "none",
+			"timestriggered": 0,
+			"status": "enabled",
+			"recycle": true,
+			"conditions": [
+				{
+					"address": "/sensors/9/state/presence",
+					"operator": "eq",
+					"value": "false"
+				},
+				{
+					"address": "/sensors/11/state/status",
+					"operator": "gt",
+					"value": "1"
+				},
+				{
+					"address": "/sensors/11/state/status",
+					"operator": "ddx",
+					"value": "PT00:00:30"
+				}
+			],
+			"actions": [
+				{
+					"address": "/groups/1/action",
+					"method": "PUT",
+					"body": {
+						"on": false
+					}
+				},
+				{
+					"address": "/groups/2/action",
+					"method": "PUT",
+					"body": {
+						"on": false
+					}
+				},
+				{
+					"address": "/sensors/11/state",
+					"method": "PUT",
+					"body": {
+						"status": 0
+					}
+				}
+			]
+		},
+		"23": {
+			"name": "MotionSensor 9.arm",
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"created": "2016-10-18T16:34:03",
+			"lasttriggered": "2016-10-19T20:39:23",
+			"timestriggered": 7,
+			"status": "enabled",
+			"recycle": true,
+			"conditions": [
+				{
+					"address": "/groups/1/state/any_on",
+					"operator": "eq",
+					"value": "false"
+				},
+				{
+					"address": "/groups/2/state/any_on",
+					"operator": "eq",
+					"value": "false"
+				},
+				{
+					"address": "/sensors/9/state/presence",
+					"operator": "eq",
+					"value": "false"
+				}
+			],
+			"actions": [
+				{
+					"address": "/sensors/11/state",
+					"method": "PUT",
+					"body": {
+						"status": 0
+					}
+				}
+			]
+		},
+		"24": {
+			"name": "Salon & SaM On ISalon 2",
+			"owner": "aTq7-EVOKVzCtIc5QW6wN5m-Ojus9nmiT0W5cPuI",
+			"created": "2016-10-18T18:36:55",
+			"lasttriggered": "2016-10-18T19:24:36",
+			"timestriggered": 10,
+			"status": "enabled",
+			"recycle": false,
+			"conditions": [
+				{
+					"address": "/sensors/2/state/buttonevent",
+					"operator": "eq",
+					"value": "17"
+				},
+				{
+					"address": "/sensors/2/state/lastupdated",
+					"operator": "dx"
+				},
+				{
+					"address": "/sensors/13/state/status",
+					"operator": "eq",
+					"value": "2"
+				}
+			],
+			"actions": [
+				{
+					"address": "/groups/1/action",
+					"method": "PUT",
+					"body": {
+						"on": true
+					}
+				},
+				{
+					"address": "/groups/2/action",
+					"method": "PUT",
+					"body": {
+						"on": true
+					}
+				},
+				{
+					"address": "/sensors/11/state",
+					"method": "PUT",
+					"body": {
+						"status": 1
+					}
+				}
+			]
+		},
+		"25": {
+			"name": "Salon & SaM On IEscalier 2",
+			"owner": "aTq7-EVOKVzCtIc5QW6wN5m-Ojus9nmiT0W5cPuI",
+			"created": "2016-10-18T18:50:44",
+			"lasttriggered": "2016-10-18T18:51:06",
+			"timestriggered": 1,
+			"status": "enabled",
+			"recycle": false,
+			"conditions": [
+				{
+					"address": "/sensors/5/state/buttonevent",
+					"operator": "eq",
+					"value": "17"
+				},
+				{
+					"address": "/sensors/5/state/lastupdated",
+					"operator": "dx"
+				},
+				{
+					"address": "/sensors/13/state/status",
+					"operator": "eq",
+					"value": "2"
+				}
+			],
+			"actions": [
+				{
+					"address": "/groups/1/action",
+					"method": "PUT",
+					"body": {
+						"scene": "nB1MtVjBRnuEAAm"
+					}
+				},
+				{
+					"address": "/groups/2/action",
+					"method": "PUT",
+					"body": {
+						"scene": "Xg1p09Hgr97uLyl"
+					}
+				},
+				{
+					"address": "/sensors/13/state",
+					"method": "PUT",
+					"body": {
+						"status": 1
+					}
+				}
+			]
+		}
+	},
+	"sensors": {
+		"1": {
+			"state": {
+				"daylight": false,
+				"lastupdated": "2016-10-19T16:51:00"
+			},
+			"config": {
+				"on": true,
+				"configured": true,
+				"sunriseoffset": 30,
+				"sunsetoffset": -30
+			},
+			"name": "Daylight",
+			"type": "Daylight",
+			"modelid": "PHDL00",
+			"manufacturername": "Philips",
+			"swversion": "1.0"
+		},
+		"2": {
+			"state": {
+				"buttonevent": 34,
+				"lastupdated": "2016-10-19T20:39:06"
+			},
+			"config": {
+				"on": true
+			},
+			"name": "Interrupteur Salon",
+			"type": "ZGPSwitch",
+			"modelid": "ZGPSWITCH",
+			"manufacturername": "Philips",
+			"uniqueid": "00:00:00:00:00:41:5c:f6-f2"
+		},
+		"5": {
+			"state": {
+				"buttonevent": 18,
+				"lastupdated": "2016-10-19T05:33:25"
+			},
+			"config": {
+				"on": true
+			},
+			"name": "Interrupteur Escalier",
+			"type": "ZGPSwitch",
+			"modelid": "ZGPSWITCH",
+			"manufacturername": "Philips",
+			"uniqueid": "00:00:00:00:00:41:11:9e-f2"
+		},
+		"6": {
+			"state": {
+				"flag": false,
+				"lastupdated": "2016-10-19T05:10:00"
+			},
+			"config": {
+				"on": true,
+				"reachable": true
+			},
+			"name": "Réveil 1",
+			"type": "CLIPGenericFlag",
+			"modelid": "WAKEUP",
+			"manufacturername": "26f8577d4a3c65871eff5d0162873c44",
+			"swversion": "A_01033989",
+			"uniqueid": "L_04_Kzsh4",
+			"recycle": false
+		},
+		"7": {
+			"state": {
+				"flag": false,
+				"lastupdated": "none"
+			},
+			"config": {
+				"on": true,
+				"reachable": true
+			},
+			"name": "Aller se coucher 1",
+			"type": "CLIPGenericFlag",
+			"modelid": "GOTOSLEEP",
+			"manufacturername": "26f8577d4a3c65871eff5d0162873c44",
+			"swversion": "A_01033989",
+			"uniqueid": "L_05_NR9Cw",
+			"recycle": true
+		},
+		"8": {
+			"state": {
+				"temperature": 1803,
+				"lastupdated": "2016-10-19T20:43:01"
+			},
+			"config": {
+				"on": true,
+				"battery": 100,
+				"reachable": true,
+				"alert": "none",
+				"ledindication": false,
+				"usertest": false,
+				"pending": []
+			},
+			"name": "Hue temperature sensor 1",
+			"type": "ZLLTemperature",
+			"modelid": "SML001",
+			"manufacturername": "Philips",
+			"swversion": "6.1.0.18912",
+			"uniqueid": "00:17:88:01:02:00:3d:48-02-0402"
+		},
+		"9": {
+			"state": {
+				"presence": false,
+				"lastupdated": "2016-10-19T20:44:19"
+			},
+			"config": {
+				"on": true,
+				"battery": 100,
+				"reachable": true,
+				"alert": "none",
+				"ledindication": false,
+				"usertest": false,
+				"sensitivity": 2,
+				"sensitivitymax": 2,
+				"pending": []
+			},
+			"name": "Capteur Salon",
+			"type": "ZLLPresence",
+			"modelid": "SML001",
+			"manufacturername": "Philips",
+			"swversion": "6.1.0.18912",
+			"uniqueid": "00:17:88:01:02:00:3d:48-02-0406"
+		},
+		"10": {
+			"state": {
+				"lightlevel": 4225,
+				"dark": true,
+				"daylight": false,
+				"lastupdated": "2016-10-19T20:41:15"
+			},
+			"config": {
+				"on": true,
+				"battery": 100,
+				"reachable": true,
+				"alert": "none",
+				"tholddark": 9014,
+				"tholdoffset": 7000,
+				"ledindication": false,
+				"usertest": false,
+				"pending": []
+			},
+			"name": "Hue ambient light sensor 1",
+			"type": "ZLLLightLevel",
+			"modelid": "SML001",
+			"manufacturername": "Philips",
+			"swversion": "6.1.0.18912",
+			"uniqueid": "00:17:88:01:02:00:3d:48-02-0400"
+		},
+		"11": {
+			"state": {
+				"status": 1,
+				"lastupdated": "2016-10-19T20:41:10"
+			},
+			"config": {
+				"on": true,
+				"reachable": true
+			},
+			"name": "MotionSensor 9.Companion",
+			"type": "CLIPGenericStatus",
+			"modelid": "PHA_STATE",
+			"manufacturername": "Philips",
+			"swversion": "1.0",
+			"uniqueid": "MotionSensor 9.Companion",
+			"recycle": true
+		},
+		"13": {
+			"state": {
+				"status": 1,
+				"lastupdated": "2016-10-19T20:39:06"
+			},
+			"config": {
+				"on": true,
+				"reachable": true
+			},
+			"name": "Salon & Sam State",
+			"type": "CLIPGenericStatus",
+			"modelid": "multipleToggleSwitch",
+			"manufacturername": "Bitflusher",
+			"swversion": "1.0",
+			"uniqueid": "A4563F",
+			"recycle": false
+		}
+	},
+	"resourcelinks": {
+		"9224": {
+			"name": "MotionSensor 9",
+			"description": "MotionSensor 9 behaviour",
+			"type": "Link",
+			"classid": 10010,
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"links": [
+				"/sensors/9",
+				"/sensors/10",
+				"/sensors/11",
+				"/groups/1",
+				"/groups/2",
+				"/rules/16",
+				"/rules/18",
+				"/rules/17",
+				"/rules/19",
+				"/rules/20",
+				"/rules/21",
+				"/rules/22",
+				"/rules/23",
+				"/scenes/PKHMPcLT0krWNu6",
+				"/scenes/vvhMozy6WiYjQtu",
+				"/scenes/hPO9u2p1miRJYsO",
+				"/scenes/D-k60Rec5FirJ6Q"
+			]
+		},
+		"36817": {
+			"name": "Aller se coucher 1",
+			"description": "Go to sleep behaviour",
+			"type": "Link",
+			"classid": 20010,
+			"owner": "26f8577d4a3c65871eff5d0162873c44",
+			"recycle": false,
+			"links": [
+				"/sensors/7",
+				"/schedules/3",
+				"/rules/13",
+				"/rules/15",
+				"/scenes/2rRFa7l-kI-OpSa",
+				"/scenes/epYpdJMJCholy8Q",
+				"/groups/3"
+			]
+		}
+	}
+}

@@ -1,0 +1,45 @@
+<div *ngIf="group">
+  <div><label>All on: </label><input id="all-on" type="checkbox" [(ngModel)]="group.state.all_on" (ngModelChange)="toggleOn()"/><label for="all-on"></label></div>
+  <div><label>Any on: </label><input id="any-on" type="checkbox" [(ngModel)]="group.state.any_on" disabled/><label for="any-on"></label></div>
+  <div><label>Name: </label><input type="text" [(ngModel)]="group.name" (ngModelChange)="setName()"/></div>
+  <div>
+    <label>Type: </label>
+    <select [(ngModel)]="group.type" (ngModelChange)="setType()">
+      <option value="0">Special</option>
+      <option value="Luminaire">Luminaire</option>
+      <option value="Lightsource">Light source</option>
+      <option value="LightGroup">Light group</option>
+      <option value="Room">Room</option>
+    </select>
+  </div>
+  <div *ngIf="group.type === 'Room'">
+    <label>Room type: </label>
+    <select [(ngModel)]="group.class" (ngModelChange)="setRoomClass()">
+      <option value="Living room">Living room</option>
+      <option value="Kitchen">Kitchen</option>
+      <option value="Dining">Dining</option>
+      <option value="Bedroom">Bedroom</option>
+      <option value="Kids bedroom">Kids bedroom</option>
+      <option value="Bathroom">Bathroom</option>
+      <option value="Nursery">Nursery</option>
+      <option value="Recreation">Recreation</option>
+      <option value="Office">Office</option>
+      <option value="Gym">Gym</option>
+      <option value="Hallway">Hallway</option>
+      <option value="Toilet">Toilet</option>
+      <option value="Front door">Front door</option>
+      <option value="Garage">Garage</option>
+      <option value="Terrace">Terrace</option>
+      <option value="Garden">Garden</option>
+      <option value="Driveway">Driveway</option>
+      <option value="Carport">Carport</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+  <div>
+    <label>Lights: </label>
+    <div class="extend">
+      <dual-list [all]="allLights" [sel]="selLights" [callback]="setSelectedLights" ></dual-list>
+    </div>
+  </div>
+</div>

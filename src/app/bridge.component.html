@@ -1,0 +1,14 @@
+<div *ngIf="bridge && bridge.userid">
+  <!--<template [ngIf]="bridge.userid">-->
+  <hue-bridge-detail [bridge]="detail" [connection]="bridge"></hue-bridge-detail>
+  <!--</template>-->
+  <!--<template [ngIf]="!bridge.userid">
+    <h2>Bridge {{bridge.id}} details!</h2>
+    <div><label>ID: </label>{{bridge.id}}</div>
+    <div>
+      <label>IP address: </label>
+      <input [(ngModel)]="bridge.internalipaddress" placeholder="internalipaddress"/>
+    </div>
+    <div>PLOP !!!</div>
+  </template>-->
+</div>

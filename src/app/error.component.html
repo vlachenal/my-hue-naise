@@ -1,0 +1,4 @@
+<div *ngIf="errors" id="top">
+  <div *ngFor="let err of errors" class="msg">{{err.error.description}}</div>
+  <div class="close" (click)="close()">x</div>
+</div>

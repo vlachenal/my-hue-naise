@@ -1,0 +1,26 @@
+<div *ngIf="light">
+  <div [class.disable-action]="!light.state.reachable">
+    <!--<div><label>State: </label><input id="light-state" type="checkbox" name="check" [(ngModel)]="light.state.on" (ngModelChange)="toggleOn()"/><label class="checkbox" for="light-state"></label></div>
+    <div [class.disable-action]="!light.state.on">
+      <div><label>Brightness: </label><input type="range" min="0" max="254" [(ngModel)]="light.state.bri" (ngModelChange)="setBrightness()"/></div>
+      <div><label>Color: </label><input type="color" [(ngModel)]="color" (ngModelChange)="setColor()" /></div>
+      <div>
+	<label>Effect: </label>
+	<select [(ngModel)]="light.state.effect" (ngModelChange)="setEffect()">
+	  <option value="none">None</option>
+	  <option value="colorloop">Color loop</option>
+	</select>
+      </div>
+      <div>
+	<label>Alert: </label>
+	<select [(ngModel)]="light.state.alert" (ngModelChange)="setAlert()">
+	  <option value="none">None</option>
+	  <option value="select">Blink</option>
+	  <option value="lselect">Blink for 15s</option>
+	</select>
+      </div>
+    </div>-->
+    <hue-light-state [state]="light.state" [light]="light" [component]="this"></hue-light-state>
+    <div><label>Name: </label><input type="text" [(ngModel)]="light.name" (ngModelChange)="setName()" /></div>
+  </div>
+</div>

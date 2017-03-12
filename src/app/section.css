@@ -1,0 +1,16 @@
+h3 {
+    background-color: LightGray;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+h3 > span:before {
+    content: "\25BE";
+    float: right;
+}
+h3 > span.expanded:before {
+    content: "\25B8";
+}
+
+.section-collapse {
+    display: none;
+}
