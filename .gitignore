@@ -7,3 +7,15 @@
 
 # Editors backup files
 **/*~
+
+# Node.js
+**/node_modules/
+npm-debug.log
+
+# PHP modules
+**/vendor/
+composer.lock
+
+# Tests
+user.db
+hue-id.json
