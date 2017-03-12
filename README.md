@@ -2,6 +2,11 @@
 Philipps HUE control and administration web UI - My HUE network administration interface simple edition
 
 ## Development environment initialization
+
+### Requirements
+MyHUEnaise project requires Node.js, PHP and PHP composer.
+
+### Initialization
 Checkout project.
 
 npm install
