@@ -4,7 +4,7 @@ Philipps HUE control and administration web UI - My HUE network administration i
 ## Development environment initialization
 
 ### Requirements
-MyHUEnaise project requires Node.js, PHP, PHP FPM and PHP composer.
+MyHUEnaise project requires Node.js, PHP, sqlite3, PHP FPM and PHP composer.
 
 Any HTTP server (tested on Nginx).
 
@@ -32,6 +32,7 @@ Copy server and vendor directories into dist directory
 
 ## Installation
 Extract or copy files into your web server folder according to its configuration.
+Configure your webserver to interpret PHP files and unable PHP sqlite3 and PDO::sqlite3 in your PHP configuration.
 
 ### Nginx
 This kind of configuration seems to work in your server section:
