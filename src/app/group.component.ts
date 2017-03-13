@@ -1,4 +1,7 @@
 /*
+   MyHUEnaise: My HUE network administration interface simple edition
+   Copyright (C) 2015 Vincent Lachenal
+
    This file is part of MyHUEnaise.
 
     MyHUEnaise is free software: you can redistribute it and/or modify
