@@ -9,7 +9,7 @@ MyHUEnaise project requires Node.js, PHP, sqlite3, PHP FPM and PHP composer.
 Any HTTP server (tested on Nginx).
 
 ### Initialization
-Checkout project.
+Clone project.
 ```
 npm install
 php /usr/bin/composer install
