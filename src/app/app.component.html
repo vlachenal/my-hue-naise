@@ -28,10 +28,10 @@
       {{ bridge.name || bridge.internalipaddress }}
     </option>
   </select>
-  <template [ngIf]="selBridge && selBridge.userid">
+  <ng-template [ngIf]="selBridge && selBridge.userid">
     <hue-bridge [bridge]="selBridge"></hue-bridge>
-  </template>
-  <template [ngIf]="selBridge && !selBridge.userid">
+  </ng-template>
+  <ng-template [ngIf]="selBridge && !selBridge.userid">
     <hue-account [bridge]="selBridge"></hue-account>
-  </template>
+  </ng-template>
 </div>

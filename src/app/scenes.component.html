@@ -21,9 +21,9 @@
 <div *ngIf="scenes">
   <h3 (click)="toggleCollapse()">Scenes<span [class.expanded]="collapsed"></span></h3>
   <div [class.section-collapse]="collapsed">
-    <template ngFor let-idx [ngForOf]="indexes" [ngForTrackBy]="trackByFn">
+    <ng-template ngFor let-idx [ngForOf]="indexes" [ngForTrackBy]="trackByFn">
       <button class="scenes" [class.selected]="idx === selIdx" (click)="onSelectScene(idx)" value="idx">#{{scenes[idx].lights}}: {{scenes[idx].name}}</button>
-    </template>
+    </ng-template>
     <hue-scene [scene]="scenes[selIdx]" [index]="selIdx" [connection]="connection" [lights]="lights" ></hue-scene>
   </div>
 </div>

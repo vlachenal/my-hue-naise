@@ -21,9 +21,9 @@
 <div *ngIf="schedules">
   <h3 (click)="toggleCollapse()">Schedules<span [class.expanded]="collapsed"></span></h3>
   <div [class.section-collapse]="collapsed">
-    <template ngFor let-idx [ngForOf]="indexes" [ngForTrackBy]="trackByFn">
+    <ng-template ngFor let-idx [ngForOf]="indexes" [ngForTrackBy]="trackByFn">
       <button class="schedules" [class.selected]="idx === selIdx" (click)="onSelectSchedule(idx)" value="idx">{{schedules[idx].name}}</button>
-    </template>
+    </ng-template>
     <hue-schedule [schedule]="schedules[selIdx]" [index]="selIdx" [connection]="connection" [bridge]="bridge" ></hue-schedule>
   </div>
 </div>

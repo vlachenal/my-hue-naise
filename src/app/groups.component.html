@@ -21,9 +21,9 @@
 <div *ngIf="groups">
   <h3 (click)="toggleCollapse()">Groups<span [class.expanded]="collapsed"></span></h3>
   <div [class.section-collapse]="collapsed">
-    <template ngFor let-idx [ngForOf]="indexes" [ngForTrackBy]="trackByFn">
+    <ng-template ngFor let-idx [ngForOf]="indexes" [ngForTrackBy]="trackByFn">
       <button class="groups" [class.selected]="idx === selIdx" (click)="onSelectGroup(idx)" value="idx">{{groups[idx].name}}</button>
-    </template>
+    </ng-template>
     <hue-group [group]="groups[selIdx]" [index]="selIdx" [connection]="connection" [lights]="lights"></hue-group>
   </div>
 </div>

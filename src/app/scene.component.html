@@ -27,11 +27,11 @@
     </div>
   </div>
   <div>
-    <template ngFor let-idx [ngForOf]="selLights" [ngForTrackBy]="trackByFn">
+    <ng-template ngFor let-idx [ngForOf]="selLights" [ngForTrackBy]="trackByFn">
       <button class="lights" [class.selected]="idx === selLightIdx" (click)="onSelectLight(idx)" value="idx">{{lights[idx].name}}</button>
-    </template>
-    <template [ngIf]="scene.lightstates">
+    </ng-template>
+    <ng-template [ngIf]="scene.lightstates">
       <hue-light-state [state]="scene.lightstates[selLightIdx]" [light]="lights[selLightIdx]" [component]="null"></hue-light-state>
-    </template>
+    </ng-template>
   </div>
 </div>
