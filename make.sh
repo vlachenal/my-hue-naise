@@ -3,4 +3,6 @@
 npm run build
 cp -r server dist
 cp -r vendor dist
-tar Jcvf my-hue-naise.tar.xz dist/*
+cd dist
+tar Jcvf ../my-hue-naise.tar.xz *
+cd -
