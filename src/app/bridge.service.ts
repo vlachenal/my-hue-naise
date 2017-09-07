@@ -35,7 +35,7 @@ export class CreateAccount {
 @Injectable()
 export class BridgeService {
 
-    private bridgesUrl = '/api/bridge';  // URL to web api
+    private bridgesUrl = 'api/bridge';  // URL to web api
     //private bridgesUrl = 'http://localhost/api/bridge';  // URL to web api
 
     constructor(private http: Http) { }
