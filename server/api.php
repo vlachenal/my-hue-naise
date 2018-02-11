@@ -51,7 +51,7 @@ $container['db'] = function ($c) {
     return $pdo;
 };
 
-$app->get('/api/bridge', function (Request $request, Response $response) {
+$app->get('/hue/api/bridge', function (Request $request, Response $response) {
     $bridges = json_decode(file_get_contents("https://www.meethue.com/api/nupnp"), true);
     $stmt = $this->db->prepare("SELECT user_id, bridge_name FROM T_User WHERE bridge_id = ?");
     $result = array();
@@ -76,7 +76,7 @@ $app->get('/api/bridge', function (Request $request, Response $response) {
     return $response->withJson($result);
 });
 
-$app->get('/api/bridge/{bridgeId}', function (Request $request, Response $response) {
+$app->get('/hue/api/bridge/{bridgeId}', function (Request $request, Response $response) {
     $bridgeId = $request->getAttribute('bridgeId');
     $stmt = $this->db->prepare("SELECT user_id, bridge_name FROM T_User WHERE bridge_id = ?");
     $stmt->bindParam(1, $bridgeId);
@@ -98,7 +98,7 @@ $app->get('/api/bridge/{bridgeId}', function (Request $request, Response $respon
     return $response;
 });
 
-$app->post('/api/bridge', function (Request $request, Response $response) {
+$app->post('/hue/api/bridge', function (Request $request, Response $response) {
     $bridge = $request->getParsedBody();
     $stmt = $this->db->prepare("INSERT INTO T_User (bridge_id, user_id, bridge_name) VALUES (?, ?, ?)");
     $stmt->bindParam(1, $bridge["bridgeid"]);
@@ -112,7 +112,7 @@ $app->post('/api/bridge', function (Request $request, Response $response) {
     return $response;
 });
 
-$app->put('/api/bridge/{bridgeId}', function (Request $request, Response $response) {
+$app->put('/hue/api/bridge/{bridgeId}', function (Request $request, Response $response) {
     $bridgeId = $request->getAttribute('bridgeId');
     $bridge = $request->getParsedBody();
     $stmt = $this->db->prepare("UPDATE T_User SET user_id = ?, bridge_name = ? WHERE bridge_id = ?");
