@@ -28,8 +28,8 @@ import { User } from './user';
 
 @Injectable()
 export class UserService {
-    //private userUrl = 'api/bridge';  // URL to web api
-    private userUrl = 'http://localhost/api/bridge';  // URL to web api
+    private userUrl = 'api/bridge';  // URL to web api
+    //private userUrl = 'http://localhost/api/bridge';  // URL to web api
 
     constructor(private http: Http) { }
 
@@ -82,7 +82,7 @@ export class UserService {
 	    errMsg = error.message ? error.message : error.toString();
 	    }*/
 	errMsg = 'plop';
-	console.error(errMsg);
+	//console.error(errMsg);
 	return Promise.reject(errMsg);
     }
 

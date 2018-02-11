@@ -49,15 +49,15 @@ export class BridgeService {
     }
 
     createUser(bridge: Bridge, account: CreateAccount): Promise<HueResponse[]> {
-	const url = `http://${bridge.internalipaddress}/api/`;
-	return this.http.get(url)
+	const url = `http://${bridge.internalipaddress}/api`;
+	return this.http.post(url, JSON.stringify(account))
 	    .toPromise()
 	    .then(res => res.json() as HueResponse[])
 	    .catch(this.handleError);
     }
 
     private handleError(error: any): Promise<any> {
-	console.error('An error occurred', error); // for demo purposes only
+	//console.error('An error occurred', error); // for demo purposes only
 	return Promise.reject(error.message || error);
     }
 

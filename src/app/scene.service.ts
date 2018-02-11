@@ -74,7 +74,7 @@ export class SceneService {
 	} else {
 	    errMsg = error.message ? error.message : error.toString();
 	}
-	console.error(errMsg);
+	//console.error(errMsg);
 	return Promise.reject(errMsg);
     }
 

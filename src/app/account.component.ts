@@ -18,12 +18,13 @@
     along with MyHUEnaise.  If not, see <http://www.gnu.org/licenses/>.
 
 */
-import { Component, Input } from '@angular/core';
+import { Component, Input, Inject } from '@angular/core';
 
 import { Bridge } from './bridge';
 import { BridgeService, CreateAccount } from './bridge.service';
 import { User } from './user';
 import { UserService } from './user.service';
+import { ErrorService } from './error.service';
 
 @Component({
     //moduleId: module.id,
@@ -39,7 +40,9 @@ export class AccountComponent {
     createRequest: CreateAccount;
     registerRequest: User;
 
-    constructor(private userService: UserService, private bridgeService: BridgeService) {
+    constructor(private userService: UserService,
+		private bridgeService: BridgeService,
+		@Inject(Error) private errorService: ErrorService) {
 	this.create = false;
 	this.register = false;
 	this.createRequest = new CreateAccount();
@@ -59,14 +62,16 @@ export class AccountComponent {
     createUser(): void {
 	this.bridgeService.createUser(this.bridge, this.createRequest)
 	    .then(res => {
-		this.registerRequest.userid = res[0].success['username'];
-		this.registerUser();
+		this.errorService.manageErrors(res);
+		if(res != null && res[0].success != null) {
+		    this.registerRequest.userid = res[0].success['username'];
+		    this.registerUser();
+		}
 	    });
     }
 
     registerUser(): void {
 	this.registerRequest.bridgeid = this.bridge.id;
-	this.registerRequest.bridgename = null;
 	this.userService.createUser(this.registerRequest).then(res => {
 	    this.bridge.userid = res.userid;
 	});
