@@ -34,12 +34,6 @@ module.exports = webpackMerge(commonConfig, {
 	    htmlLoader: {
 		minimize: false // workaround for ng2
 	    }
-	})/*,
-	new CopyWebpackPlugin([
-            { from: 'server' }
-        ]),
-	new CopyWebpackPlugin([
-            { from: 'vendor' }
-        ])*/
+	})
     ]
 });

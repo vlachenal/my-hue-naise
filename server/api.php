@@ -21,6 +21,7 @@
  */
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
+use Clue\React\Ssdp\Client;
 
 require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 
@@ -52,7 +53,50 @@ $container['db'] = function ($c) {
 };
 
 $app->get('/hue/api/bridge', function (Request $request, Response $response) {
-    $bridges = json_decode(file_get_contents("https://www.meethue.com/api/nupnp"), true);
+    $bridges = array();
+    // Look for bridges through UPnP/SSDP +
+    $loop = React\EventLoop\Factory::create();
+    $client = new Client($loop);
+    $client->search('urn:schemas-upnp-org:device:basic:1',1)->then(
+        function() use (&$bridges) {
+            // Nothing to do
+        },
+        function($e) use (&$bridges) {
+            // Nothing to do
+        },
+        function ($progress) use (&$bridges) {
+            $device = array();
+            $ip = preg_split("/:/", $progress["_sender"], 2)[0];
+            foreach(preg_split("/((\r?\n)|(\r\n?))/", $progress["data"]) as $line) {
+                $items = preg_split("/: /", $line, 2);
+                if(count($items) == 2) {
+                    $device[$items[0]] = $items[1];
+                }
+            }
+            if(array_key_exists('hue-bridgeid', $device)) {
+                $found = false;
+                $id = strtolower($device['hue-bridgeid']);
+                foreach($bridges as $bridge) {
+                    if($bridge["id"] === $id) {
+                        $found = true;
+                        break;
+                    }
+                }
+                if(!$found) {
+                    $bridges[] = array(
+                        "id" => $id,
+                        "internalipaddress" => $ip
+                    );
+                }
+            }
+        }
+    );
+    $loop->run();
+    // Look for bridges through UPnP/SSDP -
+    if(empty($bridges)) {
+        // Look for bridges through Philipps HUE nUPnP
+        $bridges = json_decode(file_get_contents("https://www.meethue.com/api/nupnp"), true);
+    }
     $stmt = $this->db->prepare("SELECT user_id, bridge_name FROM T_User WHERE bridge_id = ?");
     $result = array();
     foreach($bridges as $bridge) {
